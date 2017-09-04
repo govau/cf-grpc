@@ -1,0 +1,16 @@
+
+syntax = "proto3";
+
+package pb;
+
+service Backend {
+  rpc GetStatus(StatusRequest) returns (StatusResponse) {}
+}
+
+message StatusRequest {
+  string Job = 1;
+}
+
+message StatusResponse {
+  string Status = 1;
+}

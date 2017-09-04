@@ -1,0 +1,8 @@
+---
+applications:
+- name: backend
+  memory: 64M
+  buildpack: go_buildpack
+  command: backend
+  env:
+    GOPACKAGENAME: github.com/govau/cf-grpc/backend

@@ -1,0 +1,8 @@
+---
+applications:
+- name: frontend
+  memory: 64M
+  buildpack: go_buildpack
+  command: frontend
+  env:
+    GOPACKAGENAME: github.com/govau/cf-grpc/frontend
